@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set up directories for current and archived hospital logs
-lgdir="hospital_data/active_logs"
+logdir="hospital_data/active_logs"
 arcroot="hospital_data/archived_logs"
 
 # Keep asking the user which log they want to archive until a valid choice is made
@@ -14,17 +14,17 @@ while true; do
 
   case $choice in
     1)
-      log="$lgdir/heart_rate.log"
+      log="$logdir/heart_rate.log"
       arcdir="$arcroot/heart_data_archive"
       break
       ;;
     2)
-      log="$lgdir/temperature.log"
+      log="$logdir/temperature.log"
       arcdir="$arcroot/temperature_data_archive"
       break
       ;;
     3)
-      log="$lgdir/water_usage.log"
+      log="$logdir/water_usage.log"
       arcdir="$arcroot/water_usage_data_archive"
       break
       ;;
